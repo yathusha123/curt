@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        JavaScript CRUD Example Tutorial
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="pic">
+
+	<h1><center> CRUD </center></h1>
+	<hr>
+			<div class="employee-form">
+                <form method="post" action="post" id="form" >
+                    <div>
+                        <label>Full Name*</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                        <input type="text" name="fullName" id="fullName">
+                    </div>
+                    <div>
+                        <label>Email </label>
+                        <input type="text" name="email" id="email">
+                    </div>
+                    <div>
+                        <label>Salary</label>
+                        <input type="text" name="salary" id="salary">
+                    </div>
+                    <div>
+                      <label>City</label>
+                      <input type="text" name="city" id="city">
+                  </div>
+                  <div  class="form-action-buttons">
+                      <button type="submit" style="background-color: green "  >submit</button>
+                  </div>
+              </form>
+  </div>
+  <br/>
+  <div class = "employees-table">
+              <table class="list" id="employeeList">
+                  <thead>
+                      <tr>
+                          <th>Full Name</th>
+                          <th>Email </th>
+                          <th>Salary</th>
+                          <th>City</th>
+                          <th>Actions</th>
+                      </tr>
+                  </thead>
+                  <tbody id="table_body">
+
+                  </tbody>
+              </table>
+      </div>
+  <script src="script.js"></script>
+</body>
+</html>
